@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<config_compilers version="2.0">
+
+  <compiler COMPILER="gnu" MACH="espresso">
+    <LD>mpifort</LD>
+    <AR>ar</AR>
+    <SFC>gfortran</SFC>
+    <SCC>cc</SCC>
+    <SCXX>c++</SCXX>
+    <MPIFC>mpifort</MPIFC>
+    <MPICC>mpicc</MPICC>
+    <MPICXX>mpicxx</MPICXX>
+    <NETCDF_PATH>/usr</NETCDF_PATH>
+    <FFLAGS>
+      <append DEBUG="FALSE"> -O2 </append>
+      <append MODEL="micom"> -fdefault-real-8 </append>
+      <append MODEL="cam"> -finit-local-zero </append>
+    </FFLAGS>
+    <SLIBS>
+      <append> -L$(NETCDF_PATH)/lib -lnetcdff -lnetcdf -ldl </append>
+      <append> -lblas -llapack -lgomp -lpthread -lm -fopenmp </append>
+    </SLIBS>
+  </compiler>
+</config_compilers>
