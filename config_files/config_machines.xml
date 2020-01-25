@@ -12,7 +12,7 @@
     <COMPILERS>gnu</COMPILERS>
     <MPILIBS>mpich</MPILIBS>
     <SAVE_TIMING_DIR>UNSET</SAVE_TIMING_DIR>
-    <CIME_OUTPUT_ROOT>/root/work</CIME_OUTPUT_ROOT>
+    <CIME_OUTPUT_ROOT>/opt/work</CIME_OUTPUT_ROOT>
     <DIN_LOC_ROOT>/opt/work/inputdata</DIN_LOC_ROOT>
     <DIN_LOC_ROOT_CLMFORC>/opt/work/inputdata/atm/datm7</DIN_LOC_ROOT_CLMFORC>
     <DOUT_S_ROOT>/opt/work/archive/$CASE</DOUT_S_ROOT>

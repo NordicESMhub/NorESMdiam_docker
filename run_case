@@ -1,0 +1,13 @@
+cd $HOME/cases/F2000climo-f19_g17-case1
+
+# Customize run: monthly outputs and 12 month in a single file
+cat >> user_nl_cam << EOF
+nhtfrq(1) = 0
+mfilt(1) = 12
+EOF
+
+./case.submit
+
+mkdir -p $HOME/archive/cases
+
+cp -R $HOME/cases/ $HOME/archive/cases/.
